@@ -1,0 +1,81 @@
+@import '~antd/dist/antd.css';
+
+/* 화면창 style */
+.app{
+    height: 100vh;
+    min-height: 100%;
+}
+/* header style */
+.top{
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    color: #f0f0f0;
+    background-color: black;
+}
+/* navbar style */
+.nav{
+    background-color: black;
+    height: 100vh;
+    min-height: 100%;
+}
+.nav_box{
+    list-style-type:square;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.nav_item{ 
+    color: #f0f0f0;
+    padding: 10px 30px 10px 10px;
+}
+a{
+    color:#f0f0f0;
+    font-size: 18px;
+    text-align: left;
+    display: inline-block;
+    width:150px;
+}
+a:hover, li:hover{
+    font-weight: bold;
+    font-size: 18px;
+    color: #40a9ff;
+    cursor: pointer;
+}
+button:hover{
+    font-weight: bold;
+    color: #40a9ff;
+    cursor: pointer;
+}
+.upload_button{
+    margin-top: 10%;
+    border : none;
+    background-color: #f0f0f0;
+}
+/* contents style */
+.main{
+    height: 100vh;
+    min-height: 100%;
+    background-color: white;
+}
+.main_table{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    font-size: 15px;
+    border-collapse: collapse;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+}
+tr, td{
+    height: 50px;
+    border: 2px solid black;
+    text-align: center;
+    
+}
+.subject{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #f0f0f0;
+    background-color: black;
+}
