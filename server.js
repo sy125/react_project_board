@@ -18,7 +18,6 @@ app.listen(PORT,() => {
     console.log(`running on port ${PORT}`);
 });
 
-//client에 db 전송
 app.get("/contents", (req, res) => {
     const sqlQuery = "SELECT * FROM board";
     db.query(sqlQuery, (err, result) => {
@@ -32,9 +31,3 @@ app.get("/navbar", (req, res) => {
         res.send(result);
     });
 });
-
-app.use(express.static(path.join__dirname, 'views/build'));
-
-app.get('*', function(req, res){
-    res.sendFile(path.join(__dirname, 'views/build/index.html'));
-})
